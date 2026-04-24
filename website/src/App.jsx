@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import QuickStart from "./components/QuickStart";
 import OracleGrid from "./components/OracleGrid";
 import DocGrid from "./components/DocGrid";
+import SkillFinder from "./components/SkillFinder";
 import SkillGrid from "./components/SkillGrid";
 import Footer from "./components/Footer";
 import { guides, references, stories } from "./data/docs";
@@ -17,6 +18,7 @@ export default function App() {
         <DocGrid title="Guides" docs={guides} />
         <DocGrid title="Reference" docs={references} />
         <DocGrid title="Stories & Recipes" docs={stories} />
+        <SkillFinder />
         <SkillGrid />
       </main>
       <Footer />

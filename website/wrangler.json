@@ -1,0 +1,8 @@
+{
+  "name": "federation-books",
+  "account_id": "a5eabdc2b11aae9bd5af46bd6a88179e",
+  "compatibility_date": "2025-04-01",
+  "assets": {
+    "directory": "dist"
+  }
+}
