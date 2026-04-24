@@ -1,7 +1,3 @@
----
-title: "Federation: Your First 30 Minutes"
-description: "Prerequisites: Two nodes with maw serve running, namedPeers configured, federation status showing reachable: true."
----
 # Federation: Your First 30 Minutes
 
 > 🗺️ Setup เสร็จแล้ว — ทำอะไรต่อดี? คู่มือนี้จะพาคุณจาก "เชื่อมได้แล้ว" ไปสู่ "ใช้งานจริง" ใน 30 นาที

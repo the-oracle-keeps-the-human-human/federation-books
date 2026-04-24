@@ -1,7 +1,3 @@
----
-title: "Federation Workshop: Your First Oracle Mesh in 10 Minutes"
-description: "Two machines talking to each other through Oracle federation. By the end, you'll send a message from Machine A to Machine B — and get a reply back."
----
 # Federation Workshop: Your First Oracle Mesh in 10 Minutes
 
 ### A Step-by-Step Tutorial — No VPN Required

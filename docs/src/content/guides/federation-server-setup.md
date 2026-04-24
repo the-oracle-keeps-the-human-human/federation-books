@@ -1,7 +1,3 @@
----
-title: "Federation Server Setup"
-description: "Laptops sleep. Home machines reboot. A mesh built only from workstations drops peers hourly."
----
 # Federation Server Setup
 
 ### Production deployment on a real VPS — systemd, firewall, reverse proxy, SSL

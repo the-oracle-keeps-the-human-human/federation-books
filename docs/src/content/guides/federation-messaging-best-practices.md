@@ -1,7 +1,3 @@
----
-title: "Federation Messaging Best Practices"
-description: "Federation works. You can send a message from white:white to mba:mba and it arrives in 300ms. But \"works\" and \"works well under load\" are different things."
----
 # Federation Messaging Best Practices
 
 ### Dedup, brevity, focus modes, and other patterns to keep the mesh humming

@@ -1,7 +1,3 @@
----
-title: "Federation Recipes"
-description: "Setup: Laptop (developer) + Desktop (reviewer)"
----
 # Federation Recipes
 
 ### Real-World Use Cases for Oracle Federation

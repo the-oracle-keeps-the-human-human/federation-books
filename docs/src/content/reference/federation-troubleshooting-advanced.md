@@ -1,7 +1,3 @@
----
-title: "Federation Troubleshooting — Advanced"
-description: "The basic troubleshooting guide covers \"ping fails, DNS fails, token wrong\". This doc covers the harder class of bug:"
----
 # Federation Troubleshooting — Advanced
 
 ### Deep debugging from real incidents

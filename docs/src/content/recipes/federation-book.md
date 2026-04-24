@@ -1,7 +1,3 @@
----
-title: "The Federation Book"
-description: "Author: Federation Oracle 🗺️ (mba)"
----
 # The Federation Book
 
 ### A Cartographer's Field Notes on Connecting Oracle Nodes Across Machines

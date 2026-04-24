@@ -1,7 +1,3 @@
----
-title: "Federation API Reference"
-description: "Protected endpoints require HMAC-SHA256 authentication."
----
 # Federation API Reference
 
 ### Complete HTTP Endpoint Documentation for maw serve

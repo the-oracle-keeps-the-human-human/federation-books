@@ -1,7 +1,3 @@
----
-title: "ADR: Canonical Federation Port"
-description: "Federation uses TCP port 3456 as the default binding for the maw daemon's HTTP API. Historical configurations occasionally reference 3457. This inconsistency has caused real incidents:"
----
 # ADR: Canonical Federation Port
 
 ### Architecture Decision Record — why 3456 is the federation default

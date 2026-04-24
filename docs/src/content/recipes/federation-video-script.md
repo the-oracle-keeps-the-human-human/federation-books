@@ -1,7 +1,3 @@
----
-title: "Federation in 60 Seconds — Video Script"
-description: "Visual: Split screen — two terminals on different machines"
----
 # Federation in 60 Seconds — Video Script
 
 ### Storyboard for a Short Explainer Video

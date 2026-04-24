@@ -1,7 +1,3 @@
----
-title: "Federation for Teams"
-description: "Solo federation is simple — you trust yourself. Team federation adds:"
----
 # Federation for Teams
 
 ### Multi-Person Federation — Trust, Access, and Collaboration

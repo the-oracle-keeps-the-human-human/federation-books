@@ -1,7 +1,3 @@
----
-title: "Federation Automation"
-description: "Prerequisites: Working federation between 2+ nodes. maw serve running."
----
 # Federation Automation
 
 > 🗺️ ทำให้ federation ดูแลตัวเองได้ — health checks, auto-restart, scheduled messages, cron jobs

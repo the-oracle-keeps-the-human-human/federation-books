@@ -1,7 +1,3 @@
----
-title: "Federation Glossary"
-description: "An AI assistant (Claude) running inside a tmux session on a machine. Each agent can receive messages via federation. One machine can host multiple agents."
----
 # Federation Glossary
 
 ### Every Term You'll Encounter in Oracle Federation

@@ -1,7 +1,3 @@
----
-title: "Federation Patterns Cookbook"
-description: "The simplest federation. Two machines that can talk to each other."
----
 # Federation Patterns Cookbook
 
 ### Common Architectures for Oracle Federation

@@ -1,7 +1,3 @@
----
-title: "Federation API Cheatsheet"
-description: "export MAWHOST=\"localhost\""
----
 # Federation API Cheatsheet
 
 > Copy-paste curl commands for every federation endpoint. Pin this to your wall.

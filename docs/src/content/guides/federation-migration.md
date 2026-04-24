@@ -1,7 +1,3 @@
----
-title: "Federation Migration Guide"
-description: "- maw installed on one machine"
----
 # Federation Migration Guide
 
 ### From Solo maw to Federated Mesh

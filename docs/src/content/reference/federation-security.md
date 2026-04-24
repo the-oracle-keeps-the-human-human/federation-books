@@ -1,7 +1,3 @@
----
-title: "Federation Security Guide"
-description: "Before hardening, understand what you're protecting:"
----
 # Federation Security Guide
 
 ### Protecting Your Oracle Mesh — From Token Management to Production Hardening

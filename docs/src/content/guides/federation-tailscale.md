@@ -1,7 +1,3 @@
----
-title: "Federation over Tailscale"
-description: "Use case: You have 2+ machines on different networks (home, office, cloud) and want them to federate without touching routers or port forwarding."
----
 # Federation over Tailscale
 
 > 🗺️ Tailscale-specific guide — จาก install ถึง federation ข้ามเครื่อง ไม่ต้องเปิด port, ไม่ต้องตั้ง firewall

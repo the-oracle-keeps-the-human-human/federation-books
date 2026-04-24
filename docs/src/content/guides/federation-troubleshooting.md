@@ -1,7 +1,3 @@
----
-title: "Federation Troubleshooting Guide"
-description: "maw federation status shows \"unreachable\"?"
----
 # Federation Troubleshooting Guide
 
 ### Every Problem We Hit (and How We Fixed It)

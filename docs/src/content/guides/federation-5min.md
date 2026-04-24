@@ -1,7 +1,3 @@
----
-title: "Federation in 5 Minutes"
-description: "Prerequisite: Bun installed on both machines. That's it."
----
 # Federation in 5 Minutes
 
 ### The Absolute Minimum to Get Two Machines Talking

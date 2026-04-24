@@ -1,7 +1,3 @@
----
-title: "Federation Advanced Guide"
-description: "Federation is a full mesh — every node needs to know every other node:"
----
 # Federation Advanced Guide
 
 ### Beyond 2 Nodes — Scaling, Security, and Production Patterns

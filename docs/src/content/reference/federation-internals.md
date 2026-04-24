@@ -1,7 +1,3 @@
----
-title: "Federation Internals"
-description: "┌─────────────────────────────────────────────────────┐"
----
 # Federation Internals
 
 ### How maw.js Federation Works Under the Hood

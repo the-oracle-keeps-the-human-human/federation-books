@@ -1,7 +1,3 @@
----
-title: "Federation on Raspberry Pi"
-description: "- Always-on: Low power (~5W), runs 24/7 without noise"
----
 # Federation on Raspberry Pi
 
 ### Turn a $35 Computer into a Federation Node

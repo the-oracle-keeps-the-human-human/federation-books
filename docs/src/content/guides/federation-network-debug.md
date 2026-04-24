@@ -1,7 +1,3 @@
----
-title: "Federation Network Debugging"
-description: "The Troubleshooting Guide covers common issues. This guide is for when:"
----
 # Federation Network Debugging
 
 ### Deep Troubleshooting with Real Networking Tools

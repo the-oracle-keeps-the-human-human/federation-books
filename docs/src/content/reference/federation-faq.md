@@ -1,7 +1,3 @@
----
-title: "Federation FAQ"
-description: "A mesh network that lets AI assistants (Claude Code sessions) on different machines talk to each other directly over HTTP. No central server. Each machine runs maw serve and knows about its peers."
----
 # Federation FAQ
 
 ### Real Questions, Real Answers — From Building a 4-Node Federation

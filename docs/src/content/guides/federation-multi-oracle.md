@@ -1,7 +1,3 @@
----
-title: "Federation Multi-Oracle"
-description: "One machine. Many oracles. Each oracle is a distinct AI identity with its own role, memory, and voice. Federation lets them message each other. But how do you run 81 of them on a single laptop/server "
----
 # Federation Multi-Oracle
 
 ### Running many oracles on one host — agent routing, resource limits, naming discipline

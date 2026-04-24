@@ -1,7 +1,3 @@
----
-title: "Federation CLI Reference"
-description: "Start the federation HTTP server."
----
 # Federation CLI Reference
 
 ### Every maw Command for Federation

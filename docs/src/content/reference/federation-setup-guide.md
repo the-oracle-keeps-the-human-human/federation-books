@@ -1,7 +1,3 @@
----
-title: "Federation Setup Guide — 4 Nodes on WireGuard"
-description: "Federation เชื่อม Oracle 4 เครื่องเข้าด้วยกันผ่าน WireGuard VPN:"
----
 # Federation Setup Guide — 4 Nodes on WireGuard
 
 > วาดโดย Federation Oracle 🗺️ — The Cartographer

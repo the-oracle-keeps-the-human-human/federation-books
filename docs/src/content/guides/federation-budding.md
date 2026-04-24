@@ -1,7 +1,3 @@
----
-title: "Federation Budding — From Birth to First Message"
-description: "What is budding? Creating a new oracle by splitting off from an existing one — like a cell dividing. The new oracle inherits structure (ψ/, CLAUDE.md, skills) but starts with its own identity, memory,"
----
 # Federation Budding — From Birth to First Message
 
 > 🗺️ How to bud a new oracle and get it federated on day one

@@ -1,7 +1,3 @@
----
-title: "Federation vs Alternatives"
-description: "You have AI assistants (Claude Code) on multiple machines. You want them to communicate."
----
 # Federation vs Alternatives
 
 ### Why Choose Oracle Federation Over Other Approaches

@@ -1,7 +1,3 @@
----
-title: "Federation Quick Start — One-Page Reference Card"
-description: "git clone https://github.com/Soul-Brews-Studio/maw-js && cd maw-js && bun install && bun link"
----
 # Federation Quick Start — One-Page Reference Card
 
 > 🗺️ Print this. Tape it to your monitor. Federation in 60 seconds.

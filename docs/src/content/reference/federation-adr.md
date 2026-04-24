@@ -1,7 +1,3 @@
----
-title: "Federation Architecture Decision Records"
-description: "Context: We needed a way for Oracle sessions on different machines to communicate."
----
 # Federation Architecture Decision Records
 
 ### Why We Built It This Way

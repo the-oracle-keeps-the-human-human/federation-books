@@ -1,7 +1,3 @@
----
-title: "Federation Skills Catalog"
-description: "ghq get the-oracle-keeps-the-human-human/federation-books"
----
 # Federation Skills Catalog
 
 > Every skill you need to set up, run, debug, and manage a federation — installed with one command.

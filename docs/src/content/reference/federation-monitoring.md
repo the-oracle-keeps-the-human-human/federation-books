@@ -1,7 +1,3 @@
----
-title: "Federation Monitoring Spec"
-description: "The most basic metric: can each node reach every other node?"
----
 # Federation Monitoring Spec
 
 ### What to Watch, How to Alert, When to Act

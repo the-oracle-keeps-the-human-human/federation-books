@@ -1,7 +1,3 @@
----
-title: "Federation with Docker"
-description: "- Test locally: Spin up 3 federation nodes on one machine"
----
 # Federation with Docker
 
 ### Run Federation Nodes in Containers

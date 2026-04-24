@@ -1,7 +1,3 @@
----
-title: "ARRA Unconference #1 — Federation Live Demo Script"
-description: "curl -s http://localhost:3456/api/identity | jq .node"
----
 # ARRA Unconference #1 — Federation Live Demo Script
 
 > 26 April 2026 | CEA | ~50 people

@@ -1,7 +1,3 @@
----
-title: "Federation Protocol Specification"
-description: "Transport: HTTP/1.1 over TCP"
----
 # Federation Protocol Specification
 
 > 🗺️ Formal protocol spec สำหรับ Oracle Federation — endpoints, headers, HMAC format, error codes

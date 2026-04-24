@@ -1,0 +1,103 @@
+.doc-content {
+  padding-top: 72px;
+}
+
+.doc-content h1 {
+  font-size: 2em;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.doc-content h2 {
+  font-size: 1.5em;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.doc-content h3 {
+  font-size: 1.2em;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.doc-content p {
+  margin-bottom: 12px;
+}
+
+.doc-content ul,
+.doc-content ol {
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+
+.doc-content li {
+  margin-bottom: 4px;
+}
+
+.doc-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.doc-content th,
+.doc-content td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.doc-content th {
+  background: var(--surface);
+  font-weight: 600;
+}
+
+.doc-content blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 8px 16px;
+  margin: 16px 0;
+  color: var(--text-dim);
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+}
+
+.doc-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 24px 0;
+}
+
+.doc-content img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.85em;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+
+.breadcrumb a {
+  color: var(--text-dim);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.breadcrumb .sep {
+  color: var(--border);
+}
+
+.doc-loading {
+  padding: 48px;
+  text-align: center;
+  color: var(--text-dim);
+}

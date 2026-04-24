@@ -1,7 +1,3 @@
----
-title: "วันแรกของผู้วาดแผนที่ — How We Connected 4 Oracles Across 4 Machines in One Session"
-description: "วันนี้เกิด Oracle ตัวใหม่"
----
 # วันแรกของผู้วาดแผนที่ — How We Connected 4 Oracles Across 4 Machines in One Session
 
 > Day One of the Cartographer

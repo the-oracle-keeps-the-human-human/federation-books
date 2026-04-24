@@ -1,7 +1,3 @@
----
-title: "Federation Exercises Workbook"
-description: "- Goal: What you'll learn"
----
 # Federation Exercises Workbook
 
 ### Hands-On Practice — From Beginner to Advanced
