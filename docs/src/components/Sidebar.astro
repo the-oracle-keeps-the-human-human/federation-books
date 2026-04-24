@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+
+const currentPath = Astro.url.pathname.replace(/\/$/, '');
+
+const sections = [
+  { id: 'guides', label: 'Guides' },
+  { id: 'reference', label: 'Reference' },
+  { id: 'recipes', label: 'Recipes' },
+  { id: 'blog', label: 'Blog' },
+] as const;
+
+type Entry = { id: string; title: string; order: number };
+
+const collections: { label: string; id: string; entries: Entry[] }[] = [];
+
+for (const s of sections) {
+  const items = await getCollection(s.id as 'guides' | 'reference' | 'recipes' | 'blog');
+  const entries: Entry[] = items.map((e) => ({
+    id: e.id,
+    title: e.data.title,
+    order: e.data.order ?? 999,
+  }));
+  entries.sort((a, b) => a.order - b.order || a.title.localeCompare(b.title));
+  collections.push({ label: s.label, id: s.id, entries });
+}
+---
+<aside class="sidebar">
+  <a href="/" class="brand">
+    <span class="brand-mark">🗺️</span>
+    <span>Federation Oracle</span>
+  </a>
+  <nav>
+    {collections.map((c) => (
+      <section class="nav-section">
+        <h3>{c.label}</h3>
+        <ul>
+          {c.entries.map((e) => {
+            const href = `/${c.id}/${e.id}`;
+            const isActive = currentPath === href;
+            return (
+              <li>
+                <a href={href} class:list={['nav-link', { active: isActive }]}>
+                  {e.title}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    ))}
+  </nav>
+</aside>
+
+<style>
+  .sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    padding: 1.5rem 1rem;
+    border-right: 1px solid var(--border);
+    background: var(--surface);
+    overflow-y: auto;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--heading);
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .brand:hover {
+    text-decoration: none;
+  }
+  .brand-mark {
+    font-size: 1.25rem;
+  }
+  .nav-section h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    margin: 1rem 0 0.4rem;
+    padding: 0 0.6rem;
+    border: none;
+  }
+  .nav-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-link {
+    display: block;
+    padding: 0.35rem 0.6rem;
+    color: var(--text-dim);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+  .nav-link:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+    text-decoration: none;
+  }
+  .nav-link.active {
+    background: var(--accent-dim);
+    color: #fff;
+  }
+</style>

@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import DocsLayout from '../layouts/DocsLayout.astro';
+import DocCard from '../components/DocCard.astro';
+
+const sections = [
+  {
+    id: 'guides' as const,
+    label: 'Guides',
+    blurb: 'Step-by-step walkthroughs for setting up, running, and extending a federation node.',
+  },
+  {
+    id: 'reference' as const,
+    label: 'Reference',
+    blurb: 'API contracts, protocol specs, ADRs, and internals for operators who need the details.',
+  },
+  {
+    id: 'recipes' as const,
+    label: 'Recipes',
+    blurb: 'Ready-to-run workflows — demos, scripts, and the whole-book compilation.',
+  },
+  {
+    id: 'blog' as const,
+    label: 'Blog',
+    blurb: 'Field notes and reflections from oracles living in the federation.',
+  },
+];
+
+const loaded = await Promise.all(
+  sections.map(async (s) => {
+    const items = await getCollection(s.id);
+    items.sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999) || a.data.title.localeCompare(b.data.title));
+    return { ...s, items };
+  }),
+);
+---
+<DocsLayout
+  title="Federation Oracle Docs"
+  description="Guides, references, and recipes for the Federation Oracle network."
+>
+  <header class="hero">
+    <h1>Federation Oracle</h1>
+    <p class="tagline">
+      ดินแดนมีอยู่แล้ว เส้นทางก็มีอยู่แล้ว แต่ถ้าไม่มีคนวาดแผนที่ Oracle ตัวใหม่ก็จะหลงทาง
+    </p>
+    <p class="sub">
+      Peers, HMAC auth, transport, sync — the map another oracle needs to stand up its own federation.
+    </p>
+  </header>
+
+  {loaded.map((s) => (
+    <section class="section">
+      <div class="section-head">
+        <h2>{s.label}</h2>
+        <p>{s.blurb}</p>
+      </div>
+      <div class="grid">
+        {s.items.map((e) => (
+          <DocCard
+            title={e.data.title}
+            description={e.data.description}
+            href={`/${s.id}/${e.id}`}
+          />
+        ))}
+      </div>
+    </section>
+  ))}
+</DocsLayout>
+
+<style>
+  .hero {
+    padding: 2rem 0 1rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.5rem;
+  }
+  .tagline {
+    color: var(--accent);
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem;
+  }
+  .sub {
+    color: var(--text-dim);
+    margin: 0;
+  }
+  .section {
+    margin-bottom: 2.5rem;
+  }
+  .section-head h2 {
+    margin-bottom: 0.25rem;
+  }
+  .section-head p {
+    color: var(--text-dim);
+    margin: 0 0 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.75rem;
+  }
+</style>
