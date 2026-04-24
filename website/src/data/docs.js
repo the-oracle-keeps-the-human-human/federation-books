@@ -48,6 +48,9 @@ export const skills = [
   { name: "/federation-debug", desc: "6-layer network diagnosis — DNS to HMAC auth tracing." },
   { name: "/federation-fleet", desc: "Fleet-wide dashboard — status, health scores, connectivity matrix." },
   { name: "/federation-message", desc: "Send, broadcast, peek, history, templates — full messaging toolkit." },
+  { name: "/federation-monitor", desc: "Real-time health monitoring — alerts on drops, recovery, latency trends." },
+  { name: "/federation-backup", desc: "Backup, restore, export/import configs — never lose your setup." },
+  { name: "/federation-tunnel", desc: "Set up Tailscale, Cloudflare, or ngrok tunnels for remote access." },
   { name: "/federation-talk", desc: "Send, broadcast, listen, sync, and review PRs across the mesh." },
   { name: "/sync", desc: "Commit, push, pull, PR, merge, broadcast, ack — one command." },
   { name: "/fleet-map", desc: "Show all oracles: machines, repos, status." },
@@ -62,9 +65,9 @@ export const quickStartSteps = [
 ];
 
 export const stats = [
-  { num: "56", label: "Documents" },
-  { num: "16K", label: "Lines" },
-  { num: "13", label: "Skills" },
+  { num: "58", label: "Documents" },
+  { num: "18K", label: "Lines" },
+  { num: "16", label: "Skills" },
   { num: "4", label: "Oracles" },
 ];
 
