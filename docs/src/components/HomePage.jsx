@@ -10,10 +10,10 @@ const sectionIcons = {
 };
 
 const sectionColors = {
-  guides: '#3fb950',
-  reference: '#58a6ff',
-  recipes: '#d2a8ff',
-  blog: '#f0883e',
+  guides: '#f89b3f',
+  reference: '#1d2d6b',
+  recipes: '#d8423a',
+  blog: '#bfe0ed',
 };
 
 export default function HomePage() {
@@ -25,14 +25,15 @@ export default function HomePage() {
         <h1
           style={{
             fontSize: '2.5rem',
-            fontWeight: 700,
-            color: '#e6edf3',
+            fontWeight: 400,
+            fontFamily: 'var(--font-serif)',
+            color: '#1d2d6b',
             marginBottom: '0.5rem',
           }}
         >
           {t('home.title')}
         </h1>
-        <p style={{ color: '#8b949e', fontSize: '1.1rem', maxWidth: 600, margin: '0 auto' }}>
+        <p style={{ color: 'rgba(29,45,107,.58)', fontSize: '1.1rem', maxWidth: 600, margin: '0 auto' }}>
           {t('home.subtitle')}
         </p>
       </div>
@@ -55,9 +56,9 @@ export default function HomePage() {
               to={`/${sec.id}/${firstDoc.slug}`}
               style={{
                 display: 'block',
-                background: '#161b22',
-                border: '1px solid #30363d',
-                borderRadius: 12,
+                background: '#ffffff',
+                border: '1px solid rgba(29,45,107,.15)',
+                borderRadius: 16,
                 padding: '1.5rem',
                 textDecoration: 'none',
                 transition: 'border-color 0.2s, transform 0.2s',
@@ -67,7 +68,7 @@ export default function HomePage() {
                 e.currentTarget.style.transform = 'translateY(-2px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
+                e.currentTarget.style.borderColor = 'rgba(29,45,107,.15)';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
@@ -84,12 +85,12 @@ export default function HomePage() {
                 >
                   <path d={icon} />
                 </svg>
-                <h2 style={{ margin: 0, fontSize: '1.25rem', color: '#e6edf3' }}>
+                <h2 style={{ margin: 0, fontSize: '1.25rem', color: '#1d2d6b', fontFamily: 'var(--font-serif)' }}>
                   {sec.label[lang] || sec.label.en}
                 </h2>
               </div>
 
-              <p style={{ color: '#8b949e', margin: 0, fontSize: '0.9rem' }}>
+              <p style={{ color: 'rgba(29,45,107,.58)', margin: 0, fontSize: '0.9rem' }}>
                 {sec.docs.length} {t('home.documents')}
               </p>
             </Link>

@@ -6,7 +6,7 @@ import rehypeRaw from 'rehype-raw';
 import Breadcrumb from './Breadcrumb';
 import { sections } from '../data/nav';
 
-const mdModules = import.meta.glob('../../src/content/**/*.md', {
+const mdModules = import.meta.glob('../content/**/*.md', {
   query: '?raw',
   import: 'default',
 });
@@ -18,10 +18,10 @@ function CodeBlock({ className, children, ...props }) {
   return (
     <pre
       style={{
-        background: '#0d1117',
-        border: '1px solid #30363d',
-        borderRadius: 6,
-        padding: '1rem',
+        background: '#1d2d6b',
+        border: 'none',
+        borderRadius: 12,
+        padding: '1.25rem',
         overflowX: 'auto',
         position: 'relative',
       }}
@@ -33,7 +33,7 @@ function CodeBlock({ className, children, ...props }) {
             top: 4,
             right: 8,
             fontSize: '0.7rem',
-            color: '#8b949e',
+            color: 'rgba(237,231,211,.5)',
             textTransform: 'uppercase',
           }}
         >
@@ -59,7 +59,7 @@ const components = {
     return (
       <code
         style={{
-          background: '#1c2128',
+          background: 'rgba(29,45,107,.08)',
           padding: '0.15em 0.4em',
           borderRadius: 4,
           fontSize: '0.9em',
@@ -89,10 +89,15 @@ const components = {
     return (
       <th
         style={{
-          border: '1px solid #30363d',
+          border: '1px solid rgba(29,45,107,.15)',
           padding: '0.5rem 1rem',
-          background: '#161b22',
+          background: '#1d2d6b',
+          color: '#ede7d3',
           textAlign: 'left',
+          fontSize: '0.85em',
+          fontWeight: 500,
+          textTransform: 'uppercase',
+          letterSpacing: '0.03em',
         }}
       >
         {children}
@@ -101,7 +106,7 @@ const components = {
   },
   td({ children }) {
     return (
-      <td style={{ border: '1px solid #30363d', padding: '0.5rem 1rem' }}>
+      <td style={{ border: '1px solid rgba(29,45,107,.15)', padding: '0.5rem 1rem', background: '#fff' }}>
         {children}
       </td>
     );
@@ -110,7 +115,7 @@ const components = {
     return (
       <a
         href={href}
-        style={{ color: '#58a6ff' }}
+        style={{ color: '#1d2d6b', textDecoration: 'underline', textDecorationColor: '#f89b3f' }}
         target={href?.startsWith('http') ? '_blank' : undefined}
         rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
         {...props}
@@ -138,7 +143,7 @@ export default function DocPage({ section }) {
     setLoading(true);
     setError(null);
 
-    const key = `../../src/content/${section}/${slug}.md`;
+    const key = `../content/${section}/${slug}.md`;
     const loader = mdModules[key];
 
     if (!loader) {
@@ -160,13 +165,13 @@ export default function DocPage({ section }) {
 
   if (loading) {
     return (
-      <div style={{ color: '#8b949e', padding: '2rem' }}>Loading...</div>
+      <div className="doc-loading">Loading...</div>
     );
   }
 
   if (error) {
     return (
-      <div style={{ color: '#f85149', padding: '2rem' }}>{error}</div>
+      <div style={{ color: '#d8423a', padding: '2rem' }}>{error}</div>
     );
   }
 

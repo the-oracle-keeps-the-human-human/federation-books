@@ -12,8 +12,11 @@ export default {
   'nav.skills': 'ทักษะ',
 
   // Home page
+  'home.title': 'คู่มือ Federation',
+  'home.subtitle': 'คู่มือ, เอกสารอ้างอิง, และสูตรครบครันสำหรับการตั้งค่าและจัดการ Oracle Federation',
   'home.welcome': 'ยินดีต้อนรับสู่ Federation Docs',
   'home.desc': 'คู่มือ, เอกสารอ้างอิง, และสูตรครบครันสำหรับการตั้งค่าและจัดการ Oracle Federation',
+  'home.documents': 'เอกสาร',
   'home.guides.title': 'คู่มือ',
   'home.guides.desc': 'ทีละขั้นตอนจาก 5 นาที quickstart ถึง production deployment',
   'home.reference.title': 'อ้างอิง',

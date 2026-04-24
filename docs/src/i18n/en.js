@@ -12,8 +12,11 @@ export default {
   'nav.skills': 'Skills',
 
   // Home page
+  'home.title': 'Federation Docs',
+  'home.subtitle': 'Comprehensive guides, references, and recipes for setting up and managing Oracle federation.',
   'home.welcome': 'Welcome to Federation Docs',
   'home.desc': 'Comprehensive guides, references, and recipes for setting up and managing Oracle federation.',
+  'home.documents': 'documents',
   'home.guides.title': 'Guides',
   'home.guides.desc': 'Step-by-step tutorials from 5-minute quickstart to production deployment.',
   'home.reference.title': 'Reference',
