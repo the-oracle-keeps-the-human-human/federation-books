@@ -19,6 +19,8 @@ export const guides = [
   { title: "Raspberry Pi", href: "guides/federation-raspberry-pi.md", desc: "Headless Pi node — Bun on ARM64, pm2 auto-start.", tag: "guide" },
   { title: "Troubleshooting", href: "guides/federation-troubleshooting.md", desc: "Diagnostic flowchart — fix 90% of problems in 5 minutes.", tag: "guide" },
   { title: "Messaging Best Practices", href: "guides/federation-messaging-best-practices.md", desc: "10 patterns: dedup, receipts, focus mode, brevity.", tag: "guide" },
+  { title: "Skills Catalog", href: "guides/federation-skills-catalog.md", desc: "Every federation skill — install, usage, comparison chart.", tag: "guide" },
+  { title: "API Cheatsheet", href: "guides/federation-api-cheatsheet.md", desc: "One-page curl recipes for every federation API endpoint.", tag: "guide" },
 ];
 
 export const references = [
@@ -40,10 +42,15 @@ export const stories = [
 ];
 
 export const skills = [
+  { name: "/federation-setup", desc: "9-step interactive wizard — prerequisites to first message." },
+  { name: "/federation-invite", desc: "Generate a copy-paste invite block for new peers." },
+  { name: "/federation-doctor", desc: "8-check diagnostic with --fix mode for auto-repair." },
+  { name: "/federation-debug", desc: "6-layer network diagnosis — DNS to HMAC auth tracing." },
+  { name: "/federation-fleet", desc: "Fleet-wide dashboard — status, health scores, connectivity matrix." },
+  { name: "/federation-message", desc: "Send, broadcast, peek, history, templates — full messaging toolkit." },
   { name: "/federation-talk", desc: "Send, broadcast, listen, sync, and review PRs across the mesh." },
   { name: "/sync", desc: "Commit, push, pull, PR, merge, broadcast, ack — one command." },
   { name: "/fleet-map", desc: "Show all oracles: machines, repos, status." },
-  { name: "/federation-doctor", desc: "Auto-diagnose and fix federation problems." },
   { name: "/white, /mba", desc: "One-command shortcuts to talk to specific oracles." },
 ];
 
@@ -55,10 +62,10 @@ export const quickStartSteps = [
 ];
 
 export const stats = [
-  { num: "53", label: "Documents" },
-  { num: "14K", label: "Lines" },
-  { num: "8", label: "Skills" },
-  { num: "3", label: "Oracles" },
+  { num: "56", label: "Documents" },
+  { num: "16K", label: "Lines" },
+  { num: "13", label: "Skills" },
+  { num: "4", label: "Oracles" },
 ];
 
 export const TAG_COLORS = {
